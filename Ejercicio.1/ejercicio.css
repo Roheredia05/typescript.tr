@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaeaea; /* Fondo gris claro */
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: 700px;
+    margin: auto;
+    background: #fff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #160807; 
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.equipo1 {
+    background: linear-gradient(135deg,#ca5a5a, #c0392b,  #c03939, #ca5a5a); 
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.equipo2 {
+    background: linear-gradient(135deg,#333, #221817, #140f0f, #333); 
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.equipo h2 {
+    margin-bottom: 15px;
+    font-size: 170%;
+}
+
+.equipo label {
+    display: block; 
+    margin-top: 10px; 
+    font-weight: bold; 
+}
+
+input[type="number"] {
+    width: 90%; 
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #15171a; 
+    border-radius: 5px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.0);
+   
+}
+
+input[type="number"]:focus {
+    border-color: #961102; 
+}
+
+button {
+    background-color: #ac2016; 
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+  
+    font-size: 1em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #961c11; 
+}
+
+.puntaje {
+    margin-top: 5px;
+    font-size: 1.2em; 
+    color: #1a0607; 
+}
+
+#Resultados {
+    margin-top: 20px;
+    font-size: 1.4em; 
+    text-align: center;
+    color: #333; 
+    border-top: 2px solid #b41313; 
+    padding-top: 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>puntuaciones</title>
+    <link rel="stylesheet" href="ejercicio.css">
+</head>
+<body>
+   
+    <main>
+        <h1>Competencias Deportivas</h1>
+        <div id="app">
+            <div class="equipo1">
+                <h2>Tribu Roja</h2>
+                <label for="handball-r">Handball</label>
+                <input type="number" id="handball-r" placeholder="Puntos" />
+              
+                <label for="resistencia-r">Resistencia</label>
+                <input type="number" id="resistencia-r" placeholder="Puntos" />
+              
+                
+                <label for="ajedrez-r">Ajedrez</label>
+                <input type="number" id="ajedrez-r" placeholder="Puntos" />
+            
+                
+                <button onclick="Agregarpuntos('Tribu Roja')">Agregar puntos Tribu</button>
+            </div>
+    
+            <div class="equipo2">
+                <h2>Tribu Negra</h2>
+                <label for="handball-n">Handball</label>
+                <input type="number" id="handball-n" placeholder="Puntos" />
+              
+    
+                <label for="resistencia-n">Resistencia</label>
+                <input type="number" id="resistencia-n" placeholder="Puntos" />
+           
+    
+                <label for="ajedrez-n">Ajedrez</label>
+                <input type="number" id="ajedrez-n" placeholder="Puntos" />
+              
+    
+                <button onclick="Agregarpuntos('Tribu Negra')">Agregar puntos Tribu</button>
+            </div>
+        </div>
+        
+        <br>
+        
+        <div>
+            <button onclick="MostrarlosResultados()">Resultados</button>
+            <p id="Resultados"></p>
+        </div>
+    </main>
+    
+    
+</body>
+</html>
