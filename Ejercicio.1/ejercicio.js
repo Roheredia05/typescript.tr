@@ -13,26 +13,26 @@ var Ajedrez_Input_TribuNegra = document.getElementById('Ajedrez-n');
 var resultadoOutput = document.getElementById('Resultados');
 function AgregarPuntos(equipo) {
     if (equipo === 'TribuRoja') {
-        TribuRoja.punto = parseInt(Handball_Input_TribuRoja.value, 10) || 0;
-        TribuRoja.punto = parseInt(Resistencia_Input_TribuRoja.value, 10) || 0;
-        TribuRoja.punto = parseInt(Ajedrez_Input_TribuRoja.value, 10) || 0;
+        TribuRoja.punto += parseInt(Handball_Input_TribuRoja.value, 10) || 0;
+        TribuRoja.punto += parseInt(Resistencia_Input_TribuRoja.value, 10) || 0;
+        TribuRoja.punto += parseInt(Ajedrez_Input_TribuRoja.value, 10) || 0;
     }
     else if (equipo === 'TribuNegra') {
         TribuNegra.punto += parseInt(Handball_Input_TribuNegra.value, 10) || 0;
-        TribuNegra.punto = parseInt(Resistencia_Input_TribuNegra.value, 10) || 0;
-        TribuNegra.punto = parseInt(Ajedrez_Input_TribuNegra.value, 10) || 0;
+        TribuNegra.punto += parseInt(Resistencia_Input_TribuNegra.value, 10) || 0;
+        TribuNegra.punto += parseInt(Ajedrez_Input_TribuNegra.value, 10) || 0;
     }
 }
 function MostrarLosResultados() {
     var resultado = '';
     if (TribuRoja.punto > TribuNegra.punto) {
-        resultado = 'Tribu Roja es el ganador con ' + TribuRoja.punto + 'puntos';
+        resultado = ' Tribu Roja es el ganador con  ' + TribuRoja.punto + 'puntos';
     }
     else if (TribuRoja.punto < TribuNegra.punto) {
-        resultado = 'Tribu Negra es el ganador con ' + TribuNegra.punto + 'puntos';
+        resultado = ' Tribu Negra es el ganador con ' + TribuNegra.punto + 'puntos';
     }
     else {
-        resultado = 'Ambos equipos estan empatados con' + TribuRoja.punto + 'puntos';
+        resultado = ' Ambos equipos estan empatados con ' + TribuRoja.punto + 'puntos';
     }
     resultadoOutput.innerText = resultado;
 }

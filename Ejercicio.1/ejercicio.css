@@ -21,7 +21,7 @@ h1 {
     font-size: 2.5em;
 }
 
-.equipo1 {
+.TribuRoja{
     background: linear-gradient(135deg,#ca5a5a, #c0392b,  #c03939, #ca5a5a); 
     border-radius: 10px;
     margin: 15px 0;
@@ -29,7 +29,7 @@ h1 {
     color: white;
     text-align: center;
 }
-.equipo2 {
+.TribuNegra {
     background: linear-gradient(135deg,#333, #221817, #140f0f, #333); 
     border-radius: 10px;
     margin: 15px 0;

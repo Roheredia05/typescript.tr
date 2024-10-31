@@ -19,30 +19,33 @@ const Resistencia_Input_TribuNegra = document.getElementById ('Resistencia-n') a
 const Ajedrez_Input_TribuNegra = document.getElementById ('Ajedrez-n') as HTMLInputElement;
 
 
-const resultadoOutput = document.getElementById('Resultados') as HTMLElement;
+const resultadoOutput = document.getElementById('Resultados') as HTMLInputElement;
 
 
-function AgregarPuntos(equipo: string): void {
+function AgregarPuntos(equipo: string) {
     if (equipo === 'TribuRoja') {
         TribuRoja.punto += parseInt(Handball_Input_TribuRoja.value,10) || 0;
         TribuRoja.punto += parseInt(Resistencia_Input_TribuRoja.value,10) || 0;
         TribuRoja.punto += parseInt(Ajedrez_Input_TribuRoja.value,10) || 0;
+
+      
     } else if (equipo === 'TribuNegra') {
         TribuNegra.punto += parseInt(Handball_Input_TribuNegra.value,10) || 0;
         TribuNegra.punto += parseInt(Resistencia_Input_TribuNegra.value,10) || 0;
         TribuNegra.punto += parseInt(Ajedrez_Input_TribuNegra.value,10) || 0;
+
     }
     
 
 }
-function MostrarLosResultados(): void {
+function MostrarLosResultados() {
     let resultado='';
     if (TribuRoja.punto > TribuNegra.punto){
-        resultado = 'Tribu Roja es el ganador con ' + TribuRoja.punto + 'puntos';
+        resultado =  ' Tribu Roja es el ganador con  ' +  TribuRoja.punto  +  'puntos';
     } else if (TribuRoja.punto < TribuNegra.punto) {
-        resultado = 'Tribu Negra es el ganador con ' + TribuNegra.punto + 'puntos';
+        resultado = ' Tribu Negra es el ganador con ' +  TribuNegra.punto  +  'puntos';
     } else{
-        resultado  = 'Ambos equipos estan empatados con' + TribuRoja.punto + 'puntos';
+        resultado =  ' Ambos equipos estan empatados con '  +  TribuRoja.punto  +  'puntos';
     }
     
     resultadoOutput.innerText = resultado;
